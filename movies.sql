@@ -1,11 +1,16 @@
 USE basicset;
 CREATE TABLE movies(id1 int,movies_name2 varchar(50),Hero3 varchar(50),Heroien4 varchar(30),Director5 varchar(30),Producer7 varchar(40),budget_in_crore8 bigint,Profit9 bigint,relese_date10 date,total_song11 int,song_composer12 varchar(30),vilan13 varchar(30),comedian14 varchar(40),Writter varchar(50),Production_compnay varchar(50),Distributed_by varchar(50),Running_time_in_min int,Edited_by varchar(50),actres_famous varchar(50));
-ALTER TABLE movies RENAME COLUMN higjway_name3 TO connectivity;
-ALTER TABLE movies RENAME COLUMN inugrated_By32 to opened_by;
-ALTER TABLE movies RENAME COLUMN No_of_cities13 to total_cities;
-ALTER TABLE movies RENAME COLUMN no_of_states7 to total_states_it_passes;
-ALTER TABLE movies RENAME COLUMN No_of_districties20 to total_districts;
-/*alter table movies modify column Heroien4 varchar(30) to  Heroien4 varchar(50);*/
+/*ALTER TABLE movies RENAME COLUMN movies_name2 TO movies;
+ALTER TABLE movies RENAME COLUMN budget_in_crore8 to budget;
+ALTER TABLE movies RENAME COLUMN relese_date10 to released;
+ALTER TABLE movies RENAME COLUMN song_composer12 to musian;
+ALTER TABLE movies RENAME COLUMN Running_time_in_min to total_time;
+ALTER TABLE movies MODIFY COLUMN Heroien4 varchar(50);
+ALTER TABLE movies MODIFY COLUMN Director5 varchar(50);
+ALTER TABLE movies MODIFY COLUMN movies varchar(100);
+ALTER TABLE movies MODIFY COLUMN budget int;
+ALTER TABLE movies MODIFY COLUMN Distributed_by varchar(30);
+ALTER TABLE movies ADD COLUMN langauge varchar(15)default'Kannada';*/
 INSERT INTO movies VALUES(1,'Kantara','Rishab shetty','Saptami gouda','Rishab shetty','Vijay kiragandur',16,400,'2022-09-30',5,'B ajaneesh ','Kishore','Achyuth kumar','Risheb shetty','Hombale films','KRG studio',150,'K M prakash','Pramod shetty');
 INSERT INTO movies VALUES(2,'Manikya',' Sudeep',' Varalakshmi',' Sudeep','Priya sudeep',20,35,'2014-05-1',6,'Arjun Janya ','Ranya rao','Sadhu','Koratala shiva','Kichha creations','MNK studio',165,'N m vishnu',' p Ravishanakar');
 INSERT INTO movies VALUES(3,'KGF 1','Yash','Srinidhi','Prashanth Neel','Vijay kiragandur',80,250,'2018-11-21',6,'Ravi Basrur ','Ramachandra Raju','Achyuth kumar','Vinay Shivangi','Hombale films','KRG studio',155,'Srikanth Gowda','Ananth naga');
@@ -44,8 +49,66 @@ INSERT INTO movies VALUES(35,'RRR','Ram charan','Radhika ',' OP rao','Preetham',
 INSERT INTO movies VALUES(36,'Major','Shashi','Kiran','Tikka','rama das',16,40,'2022-01-18',5,'Ravi basrur ','Vishwa',' Avinash','Vijay prasad','Indo british film co','Amazon studio',150,'karthika srinivas','Vijay Adhiraj');
 INSERT INTO movies VALUES(37,'Vikram',' Vikram','Rashmika ','Suresh','Roopa',16,55,'2022-09-30',5,' S P B ','Rajakumar',' Vijay','Srinivas raj','Felis creations','Neelam Productions',120,'Prawin pudi','Chandan');
 INSERT INTO movies VALUES(38,'Petromax',' Satish ',' Haripriya','Vijay prasad','Sudhir',5,5,'2022-07-15',5,'Anoop seelin ','Karunya ram',' Satish ninasam','Vijay prasad','Satish  films house','Petromax studio',160,'Suresh aras','Neelanjan');
-INSERT INTO movies VALUES(39,'Kotigobba','Sudeep','Shradda ','Kathir','Srirangha',08,20,'2017-02-31',5,'C ashwath ','Vishwabnath',' Chikanna','B S Ranga','Kichha creations','Hombale studio',165,'K shankar','Abhijith');
+INSERT INTO movies VALUES(39,'Kotigobba','Sudeep','Shradda ','Kathir','Srirangha',08,20,'2017-03-31',5,'C ashwath ','Vishwabnath',' Chikanna','B S Ranga','Kichha creations','Hombale studio',165,'K shankar','Abhijith');
 INSERT INTO movies VALUES(40,'Hebbuli','Sudeep','Rachita ram ','Hunsur krishnamurthya','Girija lokesh',10,25,'2018-01-31',5,'Gangai ','Prema',' Anand','Tushar Ranganath','Kicha creations','KRG studio',166,'Preema','Abbas');
+
+
+/*ALTER TABLE movies RENAME COLUMN Hero3 TO MAIN_ACTOR;
+ALTER TABLE movies RENAME COLUMN Heroien4 to ACTRESSES;
+ALTER TABLE movies RENAME COLUMN Director5 to director;
+ALTER TABLE movies RENAME COLUMN actres_famous to actor;
+ALTER TABLE movies RENAME COLUMN Running_time_in_min to total_time;
+ALTER TABLE movies MODIFY COLUMN Heroien4 varchar(55);
+ALTER TABLE movies MODIFY COLUMN Director5 varchar(60);
+ALTER TABLE movies MODIFY COLUMN movies_name2 varchar(150);
+ALTER TABLE movies MODIFY COLUMN budget_in_crore8 int;
+ALTER TABLE movies MODIFY COLUMN Distributed_by varchar(60);
+ALTER TABLE movies DROP COLUMN  total_song11;
+ALTER TABLE movies ADD COLUMN langauge varchar(15)default'Kannada';*/
+
+/*SELECT * from movies where movies='KANTARA';
+
+SELECT Hero3,heroien4 from movies where movies='KANTARA';
+SELECT * from movies where Hero3='sudeep';
+SELECT * from movies where Hero3='yash';
+SELECT * from movies where heroien4='Amulya';*/
+
+UPDATE movies SET Hero3='SUDEEP' where id1=9;
+UPDATE movies SET movies_name2='MAKKI' where id1=9;
+UPDATE movies SET Heroien4='SAMANTHA' where id1=9;
+UPDATE movies SET Director5='S S RAJAMOULI' where id1=9;
+UPDATE movies SET Producer7='SAI KORRAPATI' where id1=9;
+UPDATE movies SET vilan13='NANI' where id1=9;
+UPDATE movies SET comedian14='SURESH BABU' where id1=9;
+UPDATE movies SET song_composer12='M M KEERAVANI' where id1=9;
+UPDATE movies SET Writter='S S RAJAMOULI' where id1=9;
+UPDATE movies SET actres_famous='JAHARSHI' where id1=9;
+SELECT * from movies where id1=9;
+
+SELECT * from movies where Hero3='RB Shetty';
+SELECT * from movies where Profit9=1200;
+SELECT * from movies where budget_in_crore8='16';
+SELECT * from movies where comedian14=' Chikanna';
+SELECT * from movies where Distributed_by='KRG studio';
+SELECT * from movies where Running_time_in_min='160';
+SELECT * from movies where movies_name2='Gaja kesari';
+SELECT * from movies where relese_date10='2022-06-17';
+SELECT * from movies where Edited_by='N M vishnu';
+SELECT * from movies where actres_famous='Ramesh Aravind';
+
+
+SELECT * from movies where id=2 AND movies_name2='Manikya';
+SELECT * from movies where Hero3='Diganta' AND Heroien4='Rachita ram';
+SELECT * from movies where Profit9=1200 AND Distributed_by='Ultra media';
+SELECT * from movies where Running_time_in_min=160 AND Edited_by='	Ujwal Kulkarn';
+SELECT * from movies where Edited_by='N M vishnu' AND actress_famous='p Ravishanakar';
+
+SELECT * from movies where Edited_by='Suresh aras' or movies_name2='Manikya';
+SELECT * from movies where Heroien4='Srinidhi' or Profit9=400;
+SELECT * from movies where Distributed_by='Hombale studio' or actress_famous='Manikya';
+SELECT * from movies where id=2 or Running_time_in_min=120;
+SELECT * from movies where Edited_by='prashant' or Hero3=' Darshana';
+
 
 
 
@@ -55,4 +118,7 @@ INSERT INTO movies VALUES(40,'Hebbuli','Sudeep','Rachita ram ','Hunsur krishnamu
 
 
 /*DROP table movies;*/
-select * from movies
+select * from movies;
+commit;
+select * from movies where Hero3='SUDEEP';
+select * from movies where Hero3='SUDEEP' AND Heroien4='SUDEEP';
