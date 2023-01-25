@@ -1,0 +1,54 @@
+use basicset;
+CREATE TABLE football(id int,player_name varchar(30),pit_name varchar(30),country varchar(40),gender enum('male','female','others'),jersy_no int,total_goals int,dateofbirth date,age int,team_name varchar(50),player_type enum('international','domastic'),player_status enum('active','noactive'),play_role varchar(30),player_father_name varchar(50),player_mother_name varchar(50),player_married_status  varchar(30),player_color varchar(30),jerssey_color varchar(30),player_nationality varchar(30),played_in_olympic varchar(10));
+INSERT INTO football VALUES(1,'Lionel Messi','messi','Argentina','1',10,8,'1987-06-24',35,'Argentina national football team','1','1','Forward Barcelona','sainta','penta','married','white','blue/white','Argentina','yes');
+INSERT INTO football VALUES(2,'Cristiano Ronaldo','Ronaldo','Portugal','1',7,6,'1985-05-05',37,'Portugal national football team','1','1','Forward Real','cristeef','kariya','married','white','red/white','Portugal','yes');
+INSERT INTO football VALUES(3,'Xavi	Midfielder','Xavi','Spain','1',10,8,'1990-06-29',32,'Spain national football team','1','1',' Barcelona','sainta','penta','married','white','red/white','Spain','yes');
+INSERT INTO football VALUES(4,'Zlatan Ibrahimovic','Zlatan','Sweden','1',10,8,'1994-12-24',31,'Sweden national football team','1','1','Forward PSG','sainta','penta','married','white','black/white','Sweden','yes');
+INSERT INTO football VALUES(5,'Radamel Falcao','Radamel','Colombia','1',10,8,'1996-02-24',26,'Colombia national football team','1','1','Forward Atletico','sainta','penta','married','white','red/white','Colombia','yes');
+INSERT INTO football VALUES(6,'Andres Iniesta','Andres','Spain','1',99,8,'1987-06-24',35,'Argentina national football team','1','1','Forward Barcelona','sainta','penta','married','black','purpel/green','Argentina','yes');
+INSERT INTO football VALUES(7,'Robin van Persie','Robin','Netherlands','1',57,6,'1985-05-05',37,'Portugal national football team','1','1','Forward Real','cristeef','kariya','married','white','red/white','Portugal','yes');
+INSERT INTO football VALUES(8,'Andrea Pirlo','Andrea','Italy','1',88,8,'1990-06-29',32,'Spain national football team','1','1',' Barcelona','sainta','penta','married','black','blue/white','Spain','yes');
+INSERT INTO football VALUES(9,'Yaya Toure','Yaya','Ivory Coast','1',87,6,'1994-12-24',31,'Sweden national football team','1','1','Forward PSG','sainta','penta','nomarried','white','purpel/green','Sweden','yes');
+INSERT INTO football VALUES(10,'Edinson Cavani','Edinson','Uruguay','1',12,8,'1996-02-24',26,'Colombia national football team','1','1','Forward Atletico','sainta','penta','married','white','red/white','Colombia','yes');
+INSERT INTO football VALUES(11,'Sergio Aguero','SergioA','Argentina','1',11,25,'1987-06-24',35,'Argentina national football team','1','1','Forward Barcelona','sainta','penta','nomarried','black','purpel/green','Argentina','yes');
+INSERT INTO football VALUES(12,'Iker Casillas','Iker','spain','1',12,23,'1985-05-05',37,'spain national football team','1','1','Forward Real','cristeef','kariya','nomarried','black','red/white','Portugal','yes');
+INSERT INTO football VALUES(13,'Neymar','Neymar','Brazil','1',13,21,'1990-06-29',32,'Brazil national football team','1','1',' Barcelona','sainta','penta','married','black','black/white','Spain','yes');
+INSERT INTO football VALUES(14,'Sergio Busquets','Sergio','Germany','1',20,9,'1994-12-24',31,'Germany national football team','1','1','Forward PSG','sainta','penta','nomarried','black','blue/white','Sweden','yes');
+INSERT INTO football VALUES(15,'Xabi Alonso','Xabi','Spain','1',25,12,'1996-02-24',26,'Spain national football team','1','1','Forward Atletico','sainta','penta','nomarried','white','purpel/green','Colombia','yes');
+INSERT INTO football VALUES(16,'Thiago Silva ','Thiago','Germany','1',26,8,'1987-06-24',35,'Germany national football team','1','1','Forward Barcelona','sainta','penta','married','white','blue/white','Argentina','yes');
+INSERT INTO football VALUES(17,'Mesut Ozil ','Mesut','Italy','1',23,6,'1985-05-05',37,'Italy national football team','1','1','Forward Real','cristeef','kariya','married','black','red/white','Portugal','yes');
+INSERT INTO football VALUES(18,'David Silva','David','Uruguay','1',33,9,'1990-06-29',32,'Uruguay national football team','1','1',' Barcelona','sainta','penta','married','black','purpel/green','Spain','yes');
+INSERT INTO football VALUES(19,'Bastian Schweinsteiger ','Bastian','Spain','1',34,12,'1994-12-24',31,'Spain national football team','1','1','Forward PSG','sainta','penta','married','white','blue/white','Sweden','yes');
+INSERT INTO football VALUES(20,'Gianluigi Buffon ','Gianluigi','Belgium','1',36,15,'1996-02-24',26,'Belgium national football team','1','1','Forward Atletico','sainta','penta','nomarried','white','purpel/green','Colombia','yes');
+INSERT INTO football VALUES(21,'Luis Suarez ','Luis','Spain','1',35,7,'1987-06-24',35,'Spain national football team','1','1','Forward Barcelona','sainta','penta','nomarried','white','purpel/green','Argentina','yes');
+INSERT INTO football VALUES(22,'Sergio Ramos ','Sergio','Germany','1',32,6,'1985-05-05',37,'Germany national football team','1','1','Forward Real','cristeef','kariya','nomarried','black','red/white','Portugal','yes');
+INSERT INTO football VALUES(23,'Vincent Kompany','Vincent','Brazil','1',34,8,'1990-06-29',32,'Brazil national football team','1','1',' Barcelona','sainta','penta','nomarried','black','blue/white','Spain','yes');
+INSERT INTO football VALUES(24,'Gerard Pique','Gerard','Germany','1',31,9,'1994-12-24',31,'Germany national football team','1','1','Forward PSG','sainta','penta','married','white','purpel/green','Sweden','yes');
+INSERT INTO football VALUES(25,'Philipp Lahm','Philipp','France','1',30,10,'1996-02-24',26,'France national football team','1','1','Forward Atletico','sainta','penta','married','black','purpel/green','Colombia','yes');
+INSERT INTO football VALUES(26,'Willian	Midfielder','Willian','Germany','1',32,25,'1987-06-24',35,'Germany national football team','1','1','Forward Barcelona','sainta','penta','nomarried','white','blue/white','Argentina','yes');
+INSERT INTO football VALUES(27,'Marco Reus ','Marco','Portugal','1',21,10,'1985-05-05',37,'Portugal national football team','1','1','Forward Real','cristeef','kariya','married','black','black/red','Portugal','yes');
+INSERT INTO football VALUES(28,'Franck Ribery','Franck','England','1',22,6,'1990-06-29',32,'England national football team','1','1',' Barcelona','sainta','penta','nomarried','black','darkblue/white','Spain','yes');
+INSERT INTO football VALUES(29,'Manuel Neuer ','Manuel','England','1',23,5,'1994-12-24',31,'England national football team','1','1','Forward PSG','sainta','penta','married','black','pupel/white','Sweden','yes');
+INSERT INTO football VALUES(30,'Ashley Cole','Ashley','Spain','1',100,8,'1996-02-24',26,'Spain national football team','1','1','Forward Atletico','sainta','penta','nomarried','white','black/white','Colombia','yes');
+
+
+Select * from football;
+Select * from football where id=2 and total_goals=6;
+Select * from football where id=2 OR id=30;
+Select upper(player_name)from football;
+Select lower(pit_name)from football;
+Select * from football where id IN(2,5,25,20,30);
+Select * from football where id  NOT IN(2,5,25,20,30);
+Select * from football where id  between 5 and 25;
+select concat(player_name,pit_name)as name from football;
+select instr(team_name,'a') from football;
+select substr(team_name,2,4)from football;
+select sum(total_goals) from football;
+select avg(total_goals) from football;
+select max(total_goals) from football;
+select min(total_goals) from football;
+commit;
+savepoint a;
+rollback;
+
+/*drop table football;*/
