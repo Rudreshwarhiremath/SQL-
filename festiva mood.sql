@@ -55,3 +55,4 @@ INSERT INTO festivamood VALUES(50,'gandhijayanthi','2023-12-24','saturday','hola
 
 SELECT * FROM festivamood;
 SELECT count(*) from festivamood;
+commit

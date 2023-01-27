@@ -1,11 +1,11 @@
 USE basicset;
-/*DROP table highway;*/
-CREATE TABLE highway1(id1 int,highwayNO2 int,highway_name varchar(50),length4 bigint,strats_at5 varchar(20),ends_at6 varchar(30),total_states_it_passes int,name_of_state1 varchar(30),name_of_state2 varchar(30),name_of_state3 varchar(30),name_of_state4 varchar(30),name_of_state5 varchar(30),No_of_cities int,NO_of_majar_cities int,majar_city1 varchar(30),majar_city2 varchar(30),majar_city3 varchar(30),majar_city4 varchar(30),majar_city5 varchar(30),total_districts int,district1 varchar(30),district2 varchar(30),district3 varchar(30),NO_of_bridges int,no_of_flyowers bigint,No_of_underbridges bigint,toolgates int,maxtool int,mintool int,budget_in_crorer bigint,billpassed_year year,inagruted_by varchar(30),inagruted_year year);                                                             
-ALTER TABLE highway RENAME COLUMN higjway_name3 TO connectivity;
-ALTER TABLE highway RENAME COLUMN inugrated_By32 to opened_by;
-ALTER TABLE highway RENAME COLUMN No_of_cities13 to total_cities;
-ALTER TABLE highway RENAME COLUMN no_of_states7 to total_states_it_passes;
-ALTER TABLE highway RENAME COLUMN No_of_districties20 to total_districts;
+DROP table highway;
+CREATE TABLE highway(id1 int,highwayNO2 int,highway_name varchar(50),length4 bigint,strats_at5 varchar(20),ends_at6 varchar(30),total_states_it_passes int,name_of_state1 varchar(30),name_of_state2 varchar(30),name_of_state3 varchar(30),name_of_state4 varchar(30),name_of_state5 varchar(30),No_of_cities int,NO_of_majar_cities int,majar_city1 varchar(30),majar_city2 varchar(30),majar_city3 varchar(30),majar_city4 varchar(30),majar_city5 varchar(30),total_districts int,district1 varchar(30),district2 varchar(30),district3 varchar(30),NO_of_bridges int,no_of_flyowers bigint,No_of_underbridges bigint,toolgates int,maxtool int,mintool int,budget_in_crorer bigint,billpassed_year year,inagruted_by varchar(30),inagruted_year year);                                                             
+ALTER TABLE highway RENAME COLUMN higjway_name TO connectivity;
+ALTER TABLE highway RENAME COLUMN inugrated_By to opened_by;
+ALTER TABLE highway RENAME COLUMN No_of_cities to total_cities;
+ALTER TABLE highway RENAME COLUMN no_of_states1 to total_states_it_passes;
+ALTER TABLE highway RENAME COLUMN total_districts to districts;
 INSERT INTO highway VALUES(1,44,'Srinagar to Kanyakumari',4122,'Srinagar','Kanyakumari',10,'Jammu','panjab','madhyapradesh','uttarpradesh','karnataka',50,10,'Dehali','Bangalore','Hydrabad','Nagpur','Bhupal',50,'anantpur',' Kurnool','Chikkaballapur',865,1200,500,45,120,50,100000,2000,'Atal bihari vajapeya',2014);
 INSERT INTO highway VALUES(2,27,'Porbandar in Gujarat to Silchar in Assam',3507,'Porbandar','Silchar',5,'gujurat','madhyapradesh','westbengal','sikhim','assam',40,5,'Ghandi Nagar','Zansi','bhupal','porabandhar','silchar',7,'Sirohi',' udaipur','bundi',550,600,500,36,110,55,80000,2012,' vajapeya',2015);
 INSERT INTO highway VALUES(3,48,'Delhi to Chennai',2807,'Delhi','Chennai',7,'Haryana','Rajastana','Gujarat','maharastra','karnataka',15,10,'Hydrabad','Bangalore','Nasik','Nagpur','Bhupal',16,'Hydrabad',' Medak','Sangareddy',512,320,220,32,130,40,7000,2012,'some body',2016);

@@ -63,4 +63,6 @@ INSERT INTO olymopic VALUES(40,'Denis Bogdan','Volleyball','men',' ROC',6,'siliv
 INSERT INTO olymopic VALUES(41,'Facundo Conte','Volleyball','men',' Argentina',2,'bronze',32,12,505);
 
 SELECT * FROM olymopic;
+SELECT count(*) from olymopic;
+
 

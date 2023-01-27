@@ -39,7 +39,7 @@ select rtrim(hero)FROM song;
 select * from song order by id DESC;
 select * from song order by duration DESC;
 select * from song order by views_in_m DESC;
-select * from song order by name;
-select * from song order by film;
+select * from song order by id;
+select * from song order by duration;
 
 commit;

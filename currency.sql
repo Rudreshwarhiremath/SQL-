@@ -55,3 +55,6 @@ SELECT substr(currency_type,5,4),currency_type from currency;
 SELECT substr(currency_type,6,5),currency_type from currency;
 SELECT substr(currency_type,7,10),currency_type from currency;
 
+commit;
+
+ 

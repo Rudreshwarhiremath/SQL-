@@ -55,3 +55,4 @@ INSERT INTO cricketplayers VALUES(50,'dhawan','india',35,'srh',23,36,0,523,125,0
 
 SELECT * from cricketplayers;
 SELECT count(*) from cricketplayers;
+commit
